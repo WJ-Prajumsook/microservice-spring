@@ -10,7 +10,7 @@ A step-by-step guide on a complete microservices architecture using Spring Boot 
     - [Create Spring Netflix Eureka Server](#eureka-server)
     - [Connecting Microservices to Eureka Server](#eureka-client)
     - [Eureka Dashboard](#eureka-dashboard)
-  - [Part 3 Service routing and Security](#part-3)
+  - [Part 3 Service routing and Security](#part-3-service-routing-and-security)
     - [Create Spring Cloud Gateway](#create-spring-cloud-gateway)
     - [Routing service with Gateway](#routing-services)
     - [Install and config Keycloak Server](#install-and-config-keycloak-server)
@@ -22,6 +22,9 @@ A step-by-step guide on a complete microservices architecture using Spring Boot 
     - [Install Promethues Server](#prometheus)
     - [Install Grafana Server](#grafana)
   - [Part 5 Log aggregation with Elastic Stack](#part-5-log-aggregation-with-elastic-stack)
+    - [Add Spring Cloud Sleuth](#add-spring-cloud-sleuth)
+    - [Install and config Elastic Stack](#install-and-config-elastic-stack)
+    - [Config Kibana on the first run](#config-kibana-on-the-first-run)
 
 ### What are we going to build? 
 
@@ -250,7 +253,7 @@ Once the Eureka server is up we can access to the dash board on http://localhost
 
 ![Eureka dashboard][img.part-2-screen-02]
 
-## Part 3 Spring Cloud Gateway and Keycloak Server
+## Part 3 Service routing and Security
 
 ### `Youtube Video`
 [![Part 2](https://img.youtube.com/vi/XmA5XJOHzYI/maxresdefault.jpg)](https://youtu.be/XmA5XJOHzYI)
@@ -594,6 +597,8 @@ Next, add logback-config.xml the Logback configuration file
 
 </configuration>
 ```
+
+### Install and config Elastic Stack
 
 Next we need to pull and run servers on Docker container, we will use Docker-compose to keep everything in same place.
 
